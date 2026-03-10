@@ -86,4 +86,4 @@ Console.WriteLine("Hello, I am " + fullName);
 ---
 
 <small>© 2026 Dmitry Meshkov. All rights reserved.  
-Last updated: March 2, 2026</small>
+Last updated: March 9, 2026</small>
