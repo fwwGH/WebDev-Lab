@@ -8,13 +8,13 @@ Laboratory works for Web Development course
 ## 📑 Лабораторные работы
 
 ### №1: HTML-резюме
-- 🔗 [Сайт](https://ВАШ_НИКНЕЙМ.github.io/WebDev-Labs/Lab1/)
+- 🔗 [Сайт](https://fwwgh.github.io/WebDev-Lab/Lab1/)
 - 📁 [Код](./Lab1/index.html)
 
 ### №2: Git & Markdown
-- 🔗 [Сайт](https://ВАШ_НИКНЕЙМ.github.io/WebDev-Labs/Lab2/cv.md)
+- 🔗 [Сайт](https://fwwgh.github.io/WebDev-Lab/Lab2/cv.md)
 - 📁 [Код](./Lab2/cv.md)
-- 🔀 [Pull Request](ссылка-на-ваш-PR)
+- 🔀 [Pull Request](https://github.com/fwwGH/WebDev-Lab/pull/1#issue-4054341130)
 
 ---
 
