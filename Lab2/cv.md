@@ -6,24 +6,24 @@
 
 ---
 
-## 📞 Contact Information
+##  Contact Information
 
 | Method | Details |
 |--------|---------|
-| 📱 Phone | [+375 25 543-90-62](tel:+375255439062) |
-| ✉️ Email | [10negative10@gmail.com](mailto:10negative10@gmail.com) |
-| 💬 Telegram | [@furfze](https://t.me/furfze) |
-| 🐙 GitHub | [github.com/blablabla](https://github.com/blablabla) |
+|  Phone | [+375 25 543-90-62](tel:+375255439062) |
+|  Email | [10negative10@gmail.com](mailto:10negative10@gmail.com) |
+|  Telegram | [@furfze](https://t.me/furfze) |
+|  GitHub | [github.com/blablabla](https://github.com/blablabla) |
 
 ---
 
-## 👤 About Me
+##  About Me
 
 I am a student at the Belarusian-Russian University, majoring in Computer Science and Computer Engineering. I am kind, helpful, and work hard to help those I can. I am diligently studying programming for professional growth and development.
 
 ---
 
-## 💻 Technical Skills
+##  Technical Skills
 
 - **Proficient in**: `C#`
 - **Currently learning**: `C`, `C++`
@@ -32,7 +32,7 @@ I am a student at the Belarusian-Russian University, majoring in Computer Scienc
 
 ---
 
-## 💡 Code Example
+##  Code Example
 
 ```csharp
 string name = "Dmitriy";
@@ -42,7 +42,7 @@ Console.WriteLine("Hello, I am " + fullName);
 
 ---
 
-## 🛠 Projects & Experience
+##  Projects & Experience
 
 ### Console Application "Cars"
 
@@ -62,22 +62,22 @@ Console.WriteLine("Hello, I am " + fullName);
 
 ---
 
-## 📚 Completed Courses
+##  Completed Courses
 
-- ✅ Physics Course — Completed
-- ✅ Mathematics Course — Completed
-- 🔄 Ongoing: Advanced C++ Programming (self-study)
+-  Physics Course — Completed
+-  Mathematics Course — Completed
+-  Ongoing: Advanced C++ Programming (self-study)
 
 ---
 
-## 🌍 English Language
+##  English Language
 
 - **Level**: B1 (Intermediate)
 - **Experience**: Technical documentation reading, English-language tutorials and courses
 
 ---
 
-## 📷 Photo
+##  Photo
 
 ![Meshkov Dmitriy](photo.jpg)
 
