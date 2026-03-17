@@ -13,7 +13,7 @@ Laboratory works for Web Development course
 
 ### №2: Git & Markdown
 - 🔗 [Сайт](https://fwwgh.github.io/WebDev-Lab/Lab2/cv.md)
-- 📁 [Код](./Lab2/cv.md)
+- 📁 [Код]([./Lab2/cv.md](https://github.com/fwwGH/WebDev-Lab/tree/Markdown/Lab2/cv.md))
 - 🔀 [Pull Request](https://github.com/fwwGH/WebDev-Lab/pull/1#issue-4054341130)
 
 ---
