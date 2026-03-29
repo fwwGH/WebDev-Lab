@@ -13,7 +13,7 @@
 |  Phone | [+375 25 543-90-62](tel:+375255439062) |
 |  Email | [10negative10@gmail.com](mailto:10negative10@gmail.com) |
 |  Telegram | [@furfze](https://t.me/furfze) |
-|  GitHub | [github.com/blablabla](https://github.com/blablabla) |
+|  GitHub | [github.com/fwwGH/WebDev-Lab](https://github.com/fwwGH/WebDev-Lab) |
 
 ---
 
