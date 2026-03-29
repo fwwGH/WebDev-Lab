@@ -81,7 +81,6 @@ Console.WriteLine("Hello, I am " + fullName);
 
 ![Meshkov Dmitriy](photo.jpg)
 
-*To view this photo, ensure photo.jpg is in the same directory*
 
 ---
 
