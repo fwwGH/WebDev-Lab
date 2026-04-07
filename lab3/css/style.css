@@ -187,7 +187,7 @@ img { max-width: 100%; display: block; }
   /* Горизонтальное положение */
   margin-left: -82px;         /* ◀ Регулируй: отрицательное = левее, положительное = правее */
 
-  transform: translateY(-19px);
+  transform: translate(18px,-19px);
 }
 
 .hero__scroll-text {
@@ -330,7 +330,7 @@ display: inline-block;
   width: 87px;
   height: 87px;
   border-radius: 50%;
-  border: 4px solid #222222; /* Обводка фоном страницы */
+  border: 4cap solid #222222; /* Обводка фоном страницы */
   margin-right: 0px;
   margin-left: -23px; /* Наложение аватаров друг на друга */
   object-fit:cover;
@@ -363,23 +363,27 @@ display: inline-block;
 
 /* ===== LOGOS SECTION ===== */
 .logos {
-  padding: 60px 0 80px;
+  padding: 41px 0 80px;
   border-bottom: 1px solid var(--stroke);
 }
 
-.logos__grid {
+.logos__grid{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  opacity: 0.6; /* Логотипы обычно полупрозрачные */
+  align-items: center; 
+  padding-left: 35px;
 }
 
 .logos__img {
-  height: 30px; /* Фиксированная высота для логотипов */
+  height: 50px;
+  margin-right: 73px; /* Фиксированная высота для логотипов */
   width: auto;
-  filter: grayscale(100%) invert(1); /* Делаем логотипы белыми если они черные */
+  display: block;
+  filter: brightness(0) invert(1); /* Делаем логотипы белыми если они черные */
 }
+.logos__img:last-child
+{
+  margin-left: -1px;
+height: 60px;}
 
 /* SECTIONS COMMON */
 .section { padding: 80px 0; }
