@@ -219,7 +219,7 @@ display: inline-block;
 /* --- Правая часть (Визуал) --- */
 .hero__visual {
   display: grid;
-  grid-template-columns: 1.3fr 0.3fr; /* Увеличили ширину для фото, уменьшили для статов */
+  grid-template-columns: 1.2fr 0.4fr; /* Увеличили ширину для фото, уменьшили для статов */
   grid-template-rows: auto auto;    
   align-items: start;
   gap: 60px;
@@ -274,7 +274,10 @@ display: inline-block;
   display: flex;
   flex-direction: column;
   gap: 55px;
-  margin-left: 40px;
+  margin-left: 0;       /* важно */
+  margin-top: 27px;     /* вниз */
+  justify-self: end;    /* прижать вправо в своей колонке */
+  transform: translateX(30px); /* сдвиг вправо (подбери) */
 }
 
 .stat-value {
@@ -291,6 +294,7 @@ display: inline-block;
   margin-top: -18px;
   font-size: 12px;
   color: var(--muted-2);
+  white-space: nowrap;
 }
 
 /* Карточка "Люди" - Под фото */
