@@ -330,7 +330,7 @@ display: inline-block;
   width: 87px;
   height: 87px;
   border-radius: 50%;
-  border: 4cap solid #222222; /* Обводка фоном страницы */
+  border: 4px solid #222222; /* Обводка фоном страницы */
   margin-right: 0px;
   margin-left: -23px; /* Наложение аватаров друг на друга */
   object-fit:cover;
