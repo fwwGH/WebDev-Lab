@@ -177,6 +177,34 @@ img { max-width: 100%; display: block; }
   transform: translate(4px,-2px);
 }
 
+.hero__title-icon,
+.hero__scroll-icon {
+  position: relative;
+}
+
+.hero__title-icon {
+  width: 55px;
+  height: 55px;
+  left: var(--hero-title-icon-offset-x, -25px);
+  top: var(--hero-title-icon-offset-y, -56px);
+  /* Измени значения: --hero-title-icon-offset-x и --hero-title-icon-offset-y */
+}
+
+.hero__scroll-icon {
+  width: 62.31px;
+  height: 60px;
+  left: var(--hero-scroll-icon-offset-x, 297px);
+  top: var(--hero-scroll-icon-offset-y, -138px);
+  /* Измени значения: --hero-scroll-icon-offset-x и --hero-scroll-icon-offset-y */
+}
+
+.hero__play-btn {
+  left: var(--hero-play-btn-offset-x, -28px);
+  top: calc(50% + var(--hero-play-btn-offset-y, 0px));
+  transform: translateY(var(--hero-play-btn-translate-y, -69.5%));
+  /* Измени значения: --hero-play-btn-offset-x, --hero-play-btn-offset-y, --hero-play-btn-translate-y */
+}
+
 /* Индикатор SCROLL */
 .hero__scroll {
   display: flex;
@@ -254,11 +282,11 @@ display: inline-block;
 /* Кнопка Play - "Наложение" через отрицательный margin */
 .hero__play-btn {
   position: absolute;
-  top: 50%;
-  left: -28px; /* Вылезает влево за пределы картинки */
-  transform: translateY(-69.5%);
   width: 138px;
   height: 138px;
+  left: var(--hero-play-btn-offset-x, -28px);
+  top: calc(50% + var(--hero-play-btn-offset-y, 0px));
+  transform: translateY(var(--hero-play-btn-translate-y, -69.5%));
   border-radius: 100%;
   background: transparent;
   border: none;
