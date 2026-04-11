@@ -162,7 +162,8 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
   font-size: 100px; /* Подстрой под Figma (56-64px) */
   line-height: 1.35;
-  margin-bottom: 20px;
+  letter-spacing: 0;
+  transform: translate(0px, -55px);
   
 }
 
@@ -174,7 +175,7 @@ img { max-width: 100%; display: block; }
   line-height: 1.4;
   max-width: 450px; /* Ограничение ширины текста */
   margin-bottom: 60px;
-  transform: translate(4px,-2px);
+  transform: translate(3px,-37px);
 }
 
 .hero__title-icon,
@@ -194,7 +195,7 @@ img { max-width: 100%; display: block; }
   width: 62.31px;
   height: 60px;
   left: var(--hero-scroll-icon-offset-x, 297px);
-  top: var(--hero-scroll-icon-offset-y, -138px);
+  top: var(--hero-scroll-icon-offset-y, -118px);
   /* Измени значения: --hero-scroll-icon-offset-x и --hero-scroll-icon-offset-y */
 }
 
@@ -215,7 +216,7 @@ img { max-width: 100%; display: block; }
   /* Горизонтальное положение */
   margin-left: -82px;         /* ◀ Регулируй: отрицательное = левее, положительное = правее */
 
-  transform: translate(18px,-19px);
+  transform: translate(18px,-54px);
 }
 
 .hero__scroll-text {
@@ -312,11 +313,10 @@ display: inline-block;
   grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  gap: 55px;
-  margin-left: 0;       /* важно */
+  gap: 48px;
   margin-top: 27px;     /* вниз */
   justify-self: end;    /* прижать вправо в своей колонке */
-  transform: translateX(30px); /* сдвиг вправо (подбери) */
+  transform: translateX(32px); /* сдвиг вправо (подбери) */
 }
 
 .stat-value {
@@ -330,8 +330,9 @@ display: inline-block;
 .stat-label {
   display: block;
   font-weight: 600;
-  margin-top: -18px;
+  margin-top: -20px;
   font-size: 12px;
+  line-height: 2.2;
   color: var(--muted-2);
   white-space: nowrap;
 }
@@ -391,7 +392,7 @@ display: inline-block;
 
 /* ===== LOGOS SECTION ===== */
 .logos {
-  padding: 41px 0 80px;
+  transform: translateY(var(--logos-offset-y, -55px));
   border-bottom: 1px solid var(--stroke);
 }
 
