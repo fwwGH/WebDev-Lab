@@ -614,23 +614,6 @@ height: 60px;}
   letter-spacing: 0em;
 }
 
-/* Круглый бейдж LEA */
-.about__badge {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #2a2a2a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  color: var(--text);
-  margin-top: 20px;
-}
-
 .about__corner-icon {
   position: absolute;
   top: -18px;   /* ◀ Регулируй отступ сверху */
