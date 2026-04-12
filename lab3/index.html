@@ -139,6 +139,7 @@
     <div class="container">
       <div class="about__wrapper">
         <div class="about__content">
+          <img src="./assets/icons/about_shape.svg" alt="" class="about__corner-icon" aria-hidden="true">
           <span class="about__label">ABOUT US</span>
           <h2 class="about__title">We Create Digital World Class Business <br>Agency Marketplace</br></h2>
         </div>
@@ -166,62 +167,148 @@
         <div class="about__body">
           <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
           <p class="about__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-          <a href="#" class="btn btn--ghost about__learn-btn">Learn More</a>
+          <a href="#" class="about__learn-btn">
+            <span class="about__learn-btn-circle">
+              <!-- Сюда вставь свою иконку круга -->
+              <img src="./assets/icons/about_ellipse.svg" alt="" aria-hidden="true">
+            </span>
+            <span class="about__learn-btn-text">Learn More</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- SERVICES -->
-    <section class="section services" id="services">
+  <!-- Services Section -->
+  <section class="services section">
       <div class="container">
-        <div class="services__grid">
-          <article class="service-card">
-            <div class="icon-placeholder service-card__icon" aria-label="Branding"></div>
-            <h3 class="service-card__title">Branding — Design</h3>
-            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="service-list">
-              <li>Logo Design</li><li>Business Card</li><li>Social Media</li><li>Advertisement</li><li>Promotion</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="icon-placeholder service-card__icon" aria-label="Interactive"></div>
-            <h3 class="service-card__title">Interactive — Design</h3>
-            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="service-list">
-              <li>Logo Design</li><li>Business Card</li><li>Social Media</li><li>Advertisement</li><li>Promotion</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="icon-placeholder service-card__icon" aria-label="Modelling"></div>
-            <h3 class="service-card__title">Illustration — Modelling</h3>
-            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="service-list">
-              <li>Logo Design</li><li>Business Card</li><li>Social Media</li><li>Advertisement</li><li>Promotion</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+          <div class="services__grid">
+              
+              <!-- Card 1: Branding -->
+              <div class="service-card">
+                  <div class="service-card__header">
+                      <!-- Место для иконки -->
+                      <div class="service-icon">
+                          <img src="assets/icons/FEAT_icon1.svg" alt="Branding Icon">
+                      </div> 
+                      <h3 class="service-card__title">
+                          <span class="outline-text">Branding</span>
+                          <span class="solid-text">
+                            <span class="dash"></span>Design</span>
+                      </h3>
+                  </div>
+                  <p class="service-card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+                  <ul class="service-list">
+                      <li>Logo Design</li>
+                      <li>Business Card</li>
+                      <li>Social Media</li>
+                      <li>Advertisement</li>
+                      <li>Promotion</li>
+                  </ul>
+              </div>
 
-    <!-- PORTFOLIO -->
-    <section class="section portfolio">
-      <div class="container portfolio__grid">
-        <div class="portfolio__list">
-          <span class="eyebrow">Portfolio</span>
-          <h2 class="section__title">We create places that connect, sustain & inspire</h2>
-          <ol class="portfolio__items">
-            <li class="portfolio__item"><span class="portfolio__num">01.</span> Web & Mobile Development <span class="portfolio__arrow">→</span></li>
-            <li class="portfolio__item"><span class="portfolio__num">02.</span> Interaction Design <span class="portfolio__arrow">↗</span></li>
-            <li class="portfolio__item"><span class="portfolio__num">03.</span> Digital Marketing <span class="portfolio__arrow">→</span></li>
-            <li class="portfolio__item"><span class="portfolio__num">04.</span> Branding & Strategy <span class="portfolio__arrow">→</span></li>
-          </ol>
+              <!-- Card 2: Interactive -->
+              <div class="service-card">
+                  <div class="service-card__header">
+                      <!-- Место для иконки -->
+                      <div class="service-icon">
+                          <img src="assets/icons/FEAT_icon2.svg" alt="Branding Icon">
+                      </div>
+                      <h3 class="service-card__title">
+                          <span class="outline-text">Interactive</span>
+                          <span class="solid-text">
+                            <span class="dash"></span>Design</span>
+                      </h3>
+                  </div>
+                  <p class="service-card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+                  <ul class="service-list">
+                      <li>Logo Design</li>
+                      <li>Business Card</li>
+                      <li>Social Media</li>
+                      <li>Advertisement</li>
+                      <li>Promotion</li>
+                  </ul>
+              </div>
+
+              <!-- Card 3: Illustration -->
+              <div class="service-card">
+                  <div class="service-card__header">
+                      <!-- Место для иконки -->
+                      <div class="service-icon">
+                          <img src="assets/icons/FEAT_icon3.svg" alt="Branding Icon">
+                      </div>
+                      <h3 class="service-card__title">
+                        <span class="outline-text">Illustration</span>
+                        <span class="solid-text">
+                            <span class="dash"></span> Modelling
+                        </span>
+                    </h3>
+                  </div>
+                  <p class="service-card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+                  <ul class="service-list">
+                      <li>Logo Design</li>
+                      <li>Business Card</li>
+                      <li>Social Media</li>
+                      <li>Advertisement</li>
+                      <li>Promotion</li>
+                  </ul>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="portfolio__header">
+          <div class="portfolio__left">
+            <span class="portfolio__label">PORTFOLIO</span>
+            <h2 class="portfolio__title">We create places that connect, sustain & inspire</h2>
+          </div>
+          
+          <div class="portfolio__right">
+            <p class="portfolio__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="portfolio__btn-circle">
+              <span>VIEW ALL PORTFOLIO</span>
+            </a>
+          </div>
         </div>
-        <div class="portfolio__visual">
-          <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#" class="btn btn--ghost">View All Portfolio</a>
-          <!-- [PLACEHOLDER] Наклонные изображения портфолио -->
-          <div class="placeholder-img portfolio__img portfolio__img--tilted" aria-label="Проект 1"></div>
+        
+        <div class="portfolio__content">
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <span class="portfolio__number">01.</span>
+              <span class="portfolio__text">Web & Mobile Development</span>
+              <span class="portfolio__arrow">→</span>
+            </li>
+            <li class="portfolio__item">
+              <span class="portfolio__number">02.</span>
+              <span class="portfolio__text">Interaction Design</span>
+              <span class="portfolio__arrow">↗</span>
+            </li>
+            <li class="portfolio__item">
+              <span class="portfolio__number">03.</span>
+              <span class="portfolio__text">Digital Marketing</span>
+              <span class="portfolio__arrow">→</span>
+            </li>
+            <li class="portfolio__item">
+              <span class="portfolio__number">04.</span>
+              <span class="portfolio__text">Branding & Strategy</span>
+              <span class="portfolio__arrow">→</span>
+            </li>
+          </ul>
+          
+          <div class="portfolio__image-wrapper">
+            <img src="./assets/img/portfolio-team.jpg" alt="Team collaboration" class="portfolio__image">
+          </div>
         </div>
       </div>
     </section>
