@@ -438,23 +438,23 @@ height: 60px;}
 .about__content {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   margin-top: 50px;
   transform: translate(-64px,4px);
 }
 
 .about__row {
   display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  gap: 0px;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 24px;
   align-items: start;
 }
 
 .about__body {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding-top: 0;
+  gap: 21px;
+  transform: translate(64px, -2px);
 }
 
 .about__learn-btn {
@@ -472,12 +472,12 @@ height: 60px;}
 }
 
 .about__img {
-  width: 100%;
+  width: 120%;
   max-width: 700px; 
   height: 530px;      
   display: block;
   border-radius: 0;
-  transform: translate(-65px, 2px);
+  transform: translate(-65px, 4px);
 }
 
 /* Иконки в About */
@@ -489,14 +489,14 @@ height: 60px;}
 }
 
 .about__icon--top {
-  top: -70px;
-  right: 22px;
+  top: -69px;
+  right: -59px;
   object-fit: cover;
   z-index: -1;
 }
 
 .about__icon--bottom {
-  bottom: -27px;
+  bottom: -28px;
   left: -113px;
   object-fit: cover;
 }
@@ -504,41 +504,45 @@ height: 60px;}
 /* Панель статистики (темная, с наложением) */
 .about__stats-panel {
   position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(17, 17, 17, 0.95);
-  padding: 28px 40px;
-  border-radius: 20px;
+  bottom: -103px;
+  left: 100%;
+  transform: translateX(-45%);
+  background: rgba(51, 51, 51, 0.95);
+  padding: 42px 59px;
   display: flex;
-  gap: 60px;
+  gap: 124px;
   z-index: 2;
 }
 
 .about__stat-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0px;
+  transform: translate(0px,10px);
 }
 
 .about__stat-value {
   font-family: var(--font-head);
   font-weight: 600;
-  font-size: 48px;
+  font-size: 50px;
   color: var(--text);
-  line-height: 1;
+  line-height: 1.75;
 }
 
 .about__stat-label {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   font-weight: 500;
+  line-height: 1.75;
+  white-space: nowrap;
+  transform: translate(0px, -18px)
 }
 
 .about__label {
   display: block;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  opacity: 0.8;
   line-height: 1.6;
   letter-spacing: 0.15em;
   color: var(--text-muted);
@@ -562,6 +566,7 @@ height: 60px;}
   line-height: 1.4;
   color: var(--text-muted);
   font-weight: 500;
+  letter-spacing: 0em;
 }
 
 /* Круглый бейдж LEA */
