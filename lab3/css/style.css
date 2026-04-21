@@ -82,7 +82,7 @@ img { max-width: 100%; display: block; }
 
 .nav__linkhome {
   font-family: var(--font-body);
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.07em; 
@@ -93,7 +93,7 @@ img { max-width: 100%; display: block; }
 }
 .nav__link {
   font-family: var(--font-body);
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.07em; 
@@ -217,7 +217,7 @@ img { max-width: 100%; display: block; }
 
 .hero__scroll-text {
   font-size: 14px;
-  font-weight: 600px;
+  font-weight: 600;
   letter-spacing: 0.25em;
   line-height: 1.4;
   opacity: 0.8;
@@ -599,7 +599,7 @@ height: 60px;}
   top: -18px;  
   right: -175px; 
   width: 104px; 
-  height: 74.24;
+  height: 74.24px;
   z-index: 1;
   pointer-events: none; 
 }
@@ -1668,7 +1668,7 @@ height: 60px;}
 .footer__desc {
   font-size: 15px;
   line-height: 1.4;
-  font-width: 500;
+  font-weight: 500;
   color: var(--text-muted);
   max-width: 270px;
   text-align: left;
