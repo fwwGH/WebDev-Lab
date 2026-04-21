@@ -472,80 +472,135 @@
     </div>
   </div>
 </section>
-    <!-- BLOG -->
+
     <section class="section blog" id="blog">
       <div class="container">
-        <div class="section__header section__header--row">
-          <div>
-            <span class="eyebrow">Latest Updates</span>
-            <h2 class="section__title">Check Some of Our Latest Update Blog</h2>
+        
+        <!-- Header -->
+        <div class="blog__header">
+          <div class="blog__header-left">
+            <span class="blog__label">LATEST UPDATES</span>
+            <h2 class="blog__title">Check Some of Our Latest Update Blog</h2>
           </div>
-          <div>
-            <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <a href="#" class="btn btn--ghost">View All Blog</a>
+          
+          <div class="blog__header-right">
+            <p class="blog__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            
+            <!-- Кнопка использует ту же структуру, что и в Portfolio -->
+            <a href="#" class="blog__btn">
+              <span class="blog__btn-circle">
+                <img src="./assets/icons/about_ellipse.svg" alt="">
+              </span>
+              <span class="blog__btn-text">VIEW ALL BLOG</span>
+            </a>
           </div>
         </div>
-        <div class="blog__grid">
-          <article class="post-card">
-            <span class="post-card__cat">UI Design | 15 Dec 2022</span>
-            <h3 class="post-card__title">What is Digital Agency Marketing</h3>
-          </article>
-          <article class="post-card">
-            <span class="post-card__cat">Marketing | 15 Dec 2022</span>
-            <h3 class="post-card__title">A Simple Social Media Marketing Checklist</h3>
-          </article>
-          <article class="post-card">
-            <span class="post-card__cat">Business | 15 Dec 2022</span>
-            <h3 class="post-card__title">Support During the Exponential Growth</h3>
-          </article>
-          <article class="post-card">
-            <span class="post-card__cat">Marketing | 15 Dec 2022</span>
-            <h3 class="post-card__title">The Importance of Making Content Right Now</h3>
-          </article>
-          <!-- [PLACEHOLDER] Наклонное изображение в блоге -->
-          <div class="placeholder-img blog__img blog__img--tilted" aria-label="Блог иллюстрация"></div>
+
+        <!-- Grid + Наклонное фото -->
+        <div class="blog__content">
+          <div class="blog__grid">
+            
+            <article class="post-card">
+              <span class="post-card__meta">UI Design <span class="separator">|</span> <span class="post-card__date">15 Dec 2022</span></span>
+              <h3 class="post-card__title">What is Digital Agency <br>Marketing</br></h3>
+            </article>
+
+            <article class="post-card">
+              <span class="post-card__meta">Marketing <span class="separator">|</span> <span class="post-card__date">15 Dec 2022</span></span>
+              <h3 class="post-card__title">A Simple Social Media<br>Marketing Checklist</br></h3>
+            </article>
+
+            <article class="post-card">
+              <span class="post-card__meta">Business <span class="separator">|</span> <span class="post-card__date">15 Dec 2022</span></span>
+              <h3 class="post-card__title">Support During the<br> Exponential Growth </br></h3>
+            </article>
+
+            <article class="post-card">
+              <span class="post-card__meta">Marketing <span class="separator">|</span> <span class="post-card__date">15 Dec 2022</span></span>
+              <h3 class="post-card__title">The Importance of Making<br>Content Right Now</br></h3>
+            </article>
+
+          </div>
+
+          <!-- Наклонное изображение по центру -->
+          <div class="blog__tilted-img">
+            <img src="./assets/img/image-1.png" alt="Blog illustration">
+          </div>
         </div>
+
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta" id="contact">
-      <div class="container cta__inner">
-        <h2 class="cta__title">Let’s Make Something Great Together!</h2>
-        <a href="#" class="cta__circle">
-          <span>CONTACT WITH US</span>
-          <span class="cta__arrow">↗</span>
+<section class="cta" id="contact">
+    <div class="container">
+      <div class="cta__wrapper">
+        
+        <!-- Фоновое изображение + декоративный круг -->
+        <div class="cta__bg">
+          <img src="./assets/img/cta-image.png" alt="Team background">
+          <div class="cta__deco-circle"></div>
+        </div>
+
+        <!-- Тёмный контейнер с контентом -->
+        <div class="cta__content">
+          <h2 class="cta__title">
+            Let's Make Something Great <span class="cta__highlight">Together!</span>
+          </h2>
+          
+          <a href="#" class="cta__btn">
+            <span class="cta__btn-text">CONTACT WITH US</span>
+            <img src="./assets/icons/arrow_up_right.svg" alt="" class="cta__btn-arrow">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <footer class="site-footer">
+  <div class="container">
+    
+    <div class="footer__top">
+      <!-- Левая часть -->
+      <div class="footer__left">
+        <p class="footer__desc">Lorem ipsum dolor sit amet consecte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tepo the.</p>
+        
+        <!-- Кнопка телефона (подставь свой путь к иконке в src) -->
+        <a href="tel:+9730682300" class="footer__phone">
+          <img src="./assets/icons/phone_icon.svg" alt="" class="footer__phone-icon">
+          <span>(973) 068 2300</span>
         </a>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="tel:+19730682200" class="btn btn--primary">📞 (973) 068 2200</a>
-      </div>
-      <div class="footer__links">
-        <h4 class="footer__title">Quick Links</h4>
+      <!-- Правая часть -->
+      <div class="footer__right">
+        <h3 class="footer__heading">QUICK LINKS</h3>
         <div class="footer__cols">
           <ul class="footer__list">
-            <li><a href="#">About Us</a></li><li><a href="#">Pricing Table</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Meet Our Team</a></li><li><a href="#">Latest News</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Pricing Table</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Meet Our Team</a></li>
+            <li><a href="#">Latest News</a></li>
           </ul>
           <ul class="footer__list">
-            <li><a href="#">Case Studies</a></li><li><a href="#">FAQ’s</a></li><li><a href="#">Services</a></li><li><a href="#">Customer Support</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Customer Support</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="container footer__bottom">
-      <p class="footer__copy">© 2026 davixa All Rights Reserved.</p>
+
+    <!-- Нижняя линия + копирайт -->
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2023 davixq All Rights Reserved</p>
       <div class="footer__legal">
         <a href="#">Terms of Use</a>
         <a href="#">Privacy Policy</a>
       </div>
     </div>
-  </footer>
-</body>
-</html>
+
+  </div>
+</footer>

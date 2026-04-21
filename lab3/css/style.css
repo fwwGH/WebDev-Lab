@@ -26,7 +26,8 @@ body {
   position: relative;
   min-width: var(--page-width);
   font-family: var(--font-body);
-  background: var(--bg);
+  background: var(--bg) url('../assets/img/BACKGROUND.png') no-repeat center center;
+  background-position: center 0px;
   color: var(--text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -139,6 +140,8 @@ img { max-width: 100%; display: block; }
 /* ===== HERO SECTION ===== */
 .hero {
   padding: 29px 0 0; 
+  background: var(--bg) url('/css/assets/icons/bg-hero.svg') no-repeat center top;
+  background-size: cover;
 }
 
 .hero__content {
@@ -402,15 +405,7 @@ display: inline-block;
   margin-left: -1px;
 height: 60px;}
 
-/* SECTIONS COMMON */
-.section { padding: 80px 0; }
-.section__header--row {
-  display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 48px;
-}
-.section__title {
-  font-family: var(--font-head); font-size: 36px; font-weight: 600; line-height: 1.15; letter-spacing: -0.02em;
-}
-.section__text { margin-top: 12px; color: var(--text-muted); max-width: 55ch; }
+
 
 /* ABOUT */
 .about {
@@ -1382,50 +1377,397 @@ height: 60px;}
   display: block;
 }
 
-/* BLOG */
-.blog__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; position: relative; }
-.post-card {
-  padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--panel);
-  transition: var(--transition);
-}
-.post-card:hover { transform: translateY(-4px); }
-.post-card__cat { font-size: 11px; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 8px; display: block; }
-.post-card__title { font-family: var(--font-head); font-size: 18px; line-height: 1.3; }
-.blog__img--tilted {
-  position: absolute; top: 50%; left: 50%; width: 220px; aspect-ratio: 1/1;
-  transform: translate(-50%, -50%) rotate(8deg); z-index: -1; opacity: 0.8;
+/* ===== BLOG SECTION ===== */
+.blog {
+  padding: 120px 0;
+  position: relative;
 }
 
-/* CTA */
-.cta { padding: 80px 0; background: linear-gradient(to right, rgba(11,11,11,0.9), rgba(11,11,11,0.7)), url('placeholder-bg.jpg') center/cover; }
-.cta__inner {
-  display: flex; justify-content: space-between; align-items: center; gap: 40px;
-  padding: 48px; border-radius: 32px; border: 1px solid var(--border); background: rgba(255,255,255,0.03);
+.blog__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: flex-end;
 }
-.cta__title { font-family: var(--font-head); font-size: 42px; max-width: 600px; }
-.cta__circle {
-  width: 160px; height: 160px; border-radius: 50%; background: var(--accent);
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  color: var(--bg); font-weight: 600; font-size: 13px; letter-spacing: 0.05em;
-  transition: var(--transition); flex-shrink: 0;
+
+.blog__header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transform: translate(-66px,6px)
 }
-.cta__circle:hover { transform: scale(1.05); }
-.cta__arrow { font-size: 20px; margin-top: 4px; }
+
+.blog__label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.blog__title {
+  font-family: var(--font-head);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.blog__header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-end;
+}
+
+.blog__description {
+  font-size: 16px;
+  line-height: 1.44;
+  color: var(--text-muted);
+  text-align: left;
+  max-width: 470px;
+  transform: translate(64px, 8px)
+}
+
+/* Кнопка VIEW ALL BLOG (точная копия стиля из Portfolio) */
+.blog__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  transform: translate(-220px, 4px);
+}
+
+.blog__btn-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.blog__btn-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blog__btn-text {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-left: -45px;
+  padding-left: 10px;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  margin-top: 1px;
+  transform: translate(-2px);
+}
+
+/* Контент: Grid + Фото */
+.blog__content {
+  position: relative;
+}
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px 200px; /* Вертикальный | Горизонтальный */
+  position: relative;
+  z-index: 2; /* Текст всегда поверх фото */
+  transform: translate(-65px, -18px);
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.post-card__meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.post-card__meta .separator {
+  margin: 0 3px;
+  opacity: 0.5;
+}
+
+.post-card__date {
+  color: var(--accent);
+}
+
+.post-card__title {
+  font-family: var(--font-head);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  transition: color var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.post-card__title:hover {
+  color: var(--accent);
+}
+
+/* Наклонное изображение */
+.blog__tilted-img {
+  position: absolute;
+  top: 45%;          /* Чуть выше центра для идеального наложения */
+  left: 50%;
+  transform: translate(-92%, -49%) rotate(0deg);
+  width: 285px;
+  height: 250px;      
+  z-index: 2;        /* Ниже текста, но видно */
+  pointer-events: none; /* Не мешает кликам по постам */
+}
+
+.blog__tilted-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* Лёгкая тень для объёма */
+}
+
+/* ===== CTA SECTION ===== */
+.cta {
+  padding: 0 0 100px;
+  position: relative;
+}
+
+.cta__wrapper {
+  position: relative;
+}
+
+/* 1. Область с фоновым изображением (УВЕЛИЧИЛ ВЫСОТУ) */
+.cta__bg {
+  position: relative;
+  width: 1305px;
+  height: 500px; /* ← БЫЛО 420px. Увеличил, чтобы фото стало больше */
+  overflow: hidden;
+  transform: translate(-65px, -10px);
+}
+
+.cta__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 2. Тёмный контейнер (ОПУСТИЛ ВНИЗ) */
+.cta__content {
+  position: relative;
+  background: #222222;
+  padding: 60px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  /* ← БЫЛО -168px. Поставил -80px, чтобы блок спустился ниже */
+  margin-top: -248px; 
+  
+  z-index: 3;
+  width: calc(100% + 265px); 
+  margin-left: -200px; 
+}
+
+.cta__title {
+  font-family: var(--font-head);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  max-width: 668px;
+  transform: translate(-6px, 0px);
+}
+
+.cta__highlight {
+  color: var(--accent);
+}
+
+/* Круглая кнопка-ссылка */
+.cta__btn {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  z-index: 4;
+  transform: translate(40px, 0px);
+}
+
+.cta__btn:hover {
+  transform: scale(1.05);
+}
+
+.cta__btn-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  transform: translate(2px, 20px);
+}
+
+.cta__btn-arrow {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transform: translate(0, 20px);
+}
 
 /* FOOTER */
-.site-footer { padding: 60px 0 20px; border-top: 1px solid var(--border); }
-.footer__grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; margin-bottom: 40px; }
-.footer__text { color: var(--text-muted); max-width: 40ch; margin-bottom: 20px; }
-.footer__title { font-family: var(--font-head); font-size: 16px; margin-bottom: 16px; }
-.footer__cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
-.footer__list li { margin-bottom: 10px; }
-.footer__list a { color: var(--text-muted); font-size: 14px; transition: var(--transition); }
-.footer__list a:hover { color: var(--text); text-decoration: underline; }
-.footer__bottom {
-  display: flex; justify-content: space-between; padding-top: 20px; border-top: 1px solid var(--border);
-  color: var(--text-muted); font-size: 13px;
+/* ===== FOOTER ===== */
+.site-footer {
+  padding: 80px 0 30px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
 }
-.footer__legal { display: flex; gap: 24px; }
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  margin-bottom: 95px;
+}
+
+/* Левая часть */
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transform: translate(-32px,34px);
+}
+
+.footer__desc {
+  font-size: 15px;
+  line-height: 1.4;
+  font-width: 500;
+  color: var(--text-muted);
+  max-width: 270px;
+  text-align: left;
+}
+
+.footer__phone {
+  display: inline-flex;
+  align-items:center;
+  gap: 10px;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.82;
+  font-weight: 600;
+  padding: 8px 16px;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.footer__phone-icon {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+/* Правая часть */
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transform: translate(160px, 17px);
+}
+
+.footer__heading {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0;
+}
+
+.footer__cols {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 32px;
+  justify-content: start;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  transform: translate(2px);
+}
+
+.footer__list a {
+  font-size: 15px;
+  line-height: 1.82;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer__list a:hover {
+  color: var(--text);
+}
+
+/* Нижняя полоса */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__copy {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+  transform: translate(-62px, -4px);
+}
+
+.footer__legal {
+  display: flex;
+  gap: 52px;
+  transform: translate(66px, -4px);
+}
+
+.footer__legal a {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
 
 /* ===== PLACEHOLDER (для визуализации) ===== */
 .placeholder-img {
