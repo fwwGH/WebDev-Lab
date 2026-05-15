@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог услуг | Digital Agency</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="nav__linkhome">← На главную</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Catalog</a></li>
+          <li><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог цифровых услуг</h1>
+      
+      <div class="catalog__controls">
+        <input type="text" id="search-input" class="catalog__search" placeholder="Поиск по названию или описанию...">
+        <select id="sort-select" class="catalog__sort">
+          <option value="default">Сортировка: По умолчанию</option>
+          <option value="price-asc">По цене (возрастание)</option>
+          <option value="price-desc">По цене (убывание)</option>
+          <option value="rating-desc">По рейтингу</option>
+          <option value="name-asc">По названию (А-Я)</option>
+        </select>
+        <div id="category-filters" class="catalog__categories"></div>
+      </div>
+
+      <div class="catalog__methods">
+        <button data-method="filter" class="method-btn">Filter (Цена > 5000)</button>
+        <button data-method="map" class="method-btn">Map (Скидка 15%)</button>
+        <button data-method="sort" class="method-btn">Sort (По рейтингу)</button>
+        <button data-method="reverse" class="method-btn">Reverse (Обратный порядок)</button>
+        <button data-method="slice" class="method-btn">Slice (Первые 5)</button>
+        <button data-method="concat" class="method-btn">Concat (+2 Демо-услуги)</button>
+        <button data-method="reduce" class="method-btn">Reduce (Только рейтинг ≥ 4.8)</button>
+        <button data-method="splice" class="method-btn">Splice (Удалить первые 3)</button>
+        <button data-method="find" class="method-btn">Find (Найти "SEO Audit")</button>
+        <button data-method="flatMap" class="method-btn">FlatMap (Дублировать Premium)</button>
+        <button id="reset-btn" class="method-btn method-btn--reset">Сбросить всё</button>
+      </div>
+
+      <div id="catalog-grid" class="catalog__grid"></div>
+      
+      <div id="no-results" class="catalog__no-results hidden">
+        По заданным критериям услуги не найдены. Измените параметры поиска или фильтры.
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/catalog.js"></script>
+</body>
+</html>
