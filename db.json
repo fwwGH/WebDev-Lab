@@ -1,0 +1,171 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Logo Design Pro",
+      "category": "Branding",
+      "price": 4500,
+      "rating": 4.8,
+      "description": "Разработка уникального логотипа с 3 концептами.",
+      "image": "./assets/img/logodesignpro.png",
+      "duration": "3-5 дней",
+      "reviews": 142
+    },
+    {
+      "id": 2,
+      "name": "Brand Identity Pack",
+      "category": "Branding",
+      "price": 12000,
+      "rating": 4.9,
+      "description": "Полный фирменный стиль: цвета, шрифты, гайдлайн.",
+      "image": "./assets/img/brandidentitypack.png",
+      "duration": "10-14 дней",
+      "reviews": 87
+    },
+    {
+      "id": 3,
+      "name": "SEO Audit",
+      "category": "Marketing",
+      "price": 3500,
+      "rating": 4.5,
+      "description": "Глубокий аудит сайта и рекомендации по продвижению.",
+      "image": "./assets/img/SEOaudit.png",
+      "duration": "3-5 дней",
+      "reviews": 203
+    },
+    {
+      "id": 4,
+      "name": "SMM Strategy",
+      "category": "Marketing",
+      "price": 6000,
+      "rating": 4.7,
+      "description": "Стратегия ведения социальных сетей на 3 месяца.",
+      "image": "./assets/img/SMMstrategy.png",
+      "duration": "5-7 дней",
+      "reviews": 95
+    },
+    {
+      "id": 5,
+      "name": "Landing Page Dev",
+      "category": "Development",
+      "price": 15000,
+      "rating": 4.9,
+      "description": "Адаптивная посадочная страница с анимациями.",
+      "image": "./assets/img/LandingPageDev.png",
+      "duration": "7-10 дней",
+      "reviews": 118
+    },
+    {
+      "id": 6,
+      "name": "E-commerce Setup",
+      "category": "Development",
+      "price": 25000,
+      "rating": 4.8,
+      "description": "Настройка интернет-магазина под ключ.",
+      "image": "./assets/img/Ecommerce.png",
+      "duration": "21-30 дней",
+      "reviews": 62
+    },
+    {
+      "id": 7,
+      "name": "UI/UX Audit",
+      "category": "Design",
+      "price": 5500,
+      "rating": 4.6,
+      "description": "Анализ удобства интерфейса и карта улучшений.",
+      "image": "./assets/img/UI_UX.png",
+      "duration": "4-6 дней",
+      "reviews": 74
+    },
+    {
+      "id": 8,
+      "name": "Mobile App UI",
+      "category": "Design",
+      "price": 18000,
+      "rating": 4.9,
+      "description": "Дизайн интерфейса мобильного приложения (iOS/Android).",
+      "image": "./assets/img/MobileAppUI.png",
+      "duration": "10-14 дней",
+      "reviews": 39
+    },
+    {
+      "id": 9,
+      "name": "Content Marketing",
+      "category": "Marketing",
+      "price": 7000,
+      "rating": 4.4,
+      "description": "Создание контент-плана и написание статей.",
+      "image": "./assets/img/ContentMarketing.png",
+      "duration": "Ежемесячно",
+      "reviews": 81
+    },
+    {
+      "id": 10,
+      "name": "Video Promo",
+      "category": "Media",
+      "price": 9000,
+      "rating": 4.7,
+      "description": "Создание рекламного ролика до 30 секунд.",
+      "image": "./assets/img/VideoPromo.png",
+      "duration": "7-10 дней",
+      "reviews": 55
+    },
+    {
+      "id": 11,
+      "name": "Email Campaign",
+      "category": "Marketing",
+      "price": 4000,
+      "rating": 4.3,
+      "description": "Настройка email-рассылки и шаблонов писем.",
+      "image": "./assets/img/EmailCampaign.png",
+      "duration": "3-5 дней",
+      "reviews": 109
+    },
+    {
+      "id": 12,
+      "name": "Web App MVP",
+      "category": "Development",
+      "price": 35000,
+      "rating": 5.0,
+      "description": "Разработка минимально жизнеспособного веб-продукта.",
+      "image": "./assets/img/WebAppMVP.png",
+      "duration": "21-30 дней",
+      "reviews": 44
+    },
+    {
+      "id": 13,
+      "name": "Illustration Set",
+      "category": "Design",
+      "price": 6500,
+      "rating": 4.8,
+      "description": "Пакет из 10 уникальных иллюстраций для сайта.",
+      "image": "./assets/img/IllustrationSet.png",
+      "duration": "5-8 дней",
+      "reviews": 31
+    },
+    {
+      "id": 14,
+      "name": "PPC Management",
+      "category": "Marketing",
+      "price": 8000,
+      "rating": 4.5,
+      "description": "Настройка и ведение контекстной рекламы.",
+      "image": "./assets/img/PPCManagement.png",
+      "duration": "Ежемесячно",
+      "reviews": 67
+    },
+    {
+      "id": 15,
+      "name": "Technical Support",
+      "category": "Development",
+      "price": 5000,
+      "rating": 4.6,
+      "description": "Ежемесячная техподдержка и обновление сайта.",
+      "image": "./assets/img/TechnicalSupport.png",
+      "duration": "Ежемесячно",
+      "reviews": 158
+    }
+  ],
+  "favorites": [],
+  "cart": []
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог услуг | Digital Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="nav__linkhome">Digital Agency</a>
+      <nav class="nav" aria-label="Навигация">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="catalog.html" class="nav__linkhome">CATALOG</a></li>
+          <li><a href="favorites.html" class="nav__link">ИЗБРАННОЕ <span id="fav-count-header" class="nav-badge">0</span></a></li>
+          <li><a href="cart.html" class="nav__link">КОРЗИНА <span id="cart-count-header" class="nav-badge">0</span></a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="favorites.html" class="icon-btn" aria-label="Избранное">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Корзина">
+          <img src="./assets/icons/cart.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог цифровых услуг</h1>
+
+      <!-- Основные фильтры -->
+      <div class="catalog__controls">
+        <input type="text" id="search-input" class="catalog__search" placeholder="Поиск по названию, описанию, категории...">
+        <select id="sort-select" class="catalog__sort">
+          <option value="">Сортировка: По умолчанию</option>
+          <option value="price_asc">По цене (возрастание)</option>
+          <option value="price_desc">По цене (убывание)</option>
+          <option value="rating_desc">По рейтингу</option>
+          <option value="name_asc">По названию (А-Я)</option>
+        </select>
+      </div>
+
+      <!-- Категории -->
+      <div id="category-filters" class="catalog__categories"></div>
+
+      <!-- Расширенная фильтрация -->
+      <details class="catalog__advanced">
+        <summary class="catalog__advanced-toggle">Расширенные фильтры ▾</summary>
+        <div class="catalog__advanced-body">
+          <div class="advanced-filter-row">
+            <div class="advanced-filter-group">
+              <label>Мин. цена (₽)</label>
+              <input type="number" id="price-min" class="catalog__search" placeholder="0" min="0">
+            </div>
+            <div class="advanced-filter-group">
+              <label>Макс. цена (₽)</label>
+              <input type="number" id="price-max" class="catalog__search" placeholder="100000" min="0">
+            </div>
+            <div class="advanced-filter-group">
+              <label>Мин. рейтинг</label>
+              <input type="number" id="rating-min" class="catalog__search" placeholder="0" min="0" max="5" step="0.1">
+            </div>
+            <div class="advanced-filter-group">
+              <label>Макс. рейтинг</label>
+              <input type="number" id="rating-max" class="catalog__search" placeholder="5" min="0" max="5" step="0.1">
+            </div>
+          </div>
+          <button id="apply-advanced-btn" class="method-btn">Применить</button>
+          <button id="reset-advanced-btn" class="method-btn method-btn--reset">Сбросить расширенные</button>
+        </div>
+      </details>
+
+      <!-- Кнопки методов массива (лаба 6) -->
+      <div class="catalog__methods">
+        <span class="catalog__methods-label">Методы массивов (ЛР6):</span>
+        <button data-method="filter" class="method-btn">Filter (Цена > 5000)</button>
+        <button data-method="map" class="method-btn">Map (Скидка 15%)</button>
+        <button data-method="sort" class="method-btn">Sort (По рейтингу)</button>
+        <button data-method="reverse" class="method-btn">Reverse</button>
+        <button data-method="slice" class="method-btn">Slice (Первые 5)</button>
+        <button data-method="concat" class="method-btn">Concat (+2 Демо)</button>
+        <button data-method="reduce" class="method-btn">Reduce (Рейтинг ≥ 4.8)</button>
+        <button data-method="splice" class="method-btn">Splice (Удалить 3)</button>
+        <button data-method="find" class="method-btn">Find (SEO Audit)</button>
+        <button data-method="flatMap" class="method-btn">FlatMap (Premium)</button>
+        <button id="reset-btn" class="method-btn method-btn--reset">Сбросить всё</button>
+      </div>
+
+      <!-- Статус загрузки -->
+      <div id="loading" class="catalog__loading hidden">Загрузка...</div>
+
+      <!-- Сетка карточек -->
+      <div id="catalog-grid" class="catalog__grid"></div>
+
+      <!-- Нет результатов -->
+      <div id="no-results" class="catalog__no-results hidden">
+        По заданным критериям услуги не найдены. Измените параметры поиска или фильтры.
+      </div>
+
+      <!-- Пагинация -->
+      <div id="pagination" class="catalog__pagination"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2023 Digital Agency. All Rights Reserved</p>
+        <div class="footer__legal">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="./assets/js/catalog.js"></script>
+</body>
+</html>

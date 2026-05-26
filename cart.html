@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина | Digital Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="nav__linkhome">Digital Agency</a>
+      <nav class="nav" aria-label="Навигация">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="catalog.html" class="nav__link">CATALOG</a></li>
+          <li><a href="favorites.html" class="nav__link">ИЗБРАННОЕ <span id="fav-count-header" class="nav-badge">0</span></a></li>
+          <li><a href="cart.html" class="nav__linkhome">КОРЗИНА <span id="cart-count-header" class="nav-badge">0</span></a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="favorites.html" class="icon-btn" aria-label="Избранное">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Корзина">
+          <img src="./assets/icons/cart.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalog">
+      <h1 class="catalog__title">Корзина покупок</h1>
+
+      <div id="loading" class="catalog__loading hidden">Загрузка...</div>
+
+      <div id="cart-content" class="cart-content hidden">
+        <div id="cart-list" class="cart-list"></div>
+
+        <div class="cart-summary">
+          <div class="cart-summary__row">
+            <span>Итого товаров:</span>
+            <span id="cart-item-count">0</span>
+          </div>
+          <div class="cart-summary__row cart-summary__total">
+            <span>Общая сумма:</span>
+            <span id="cart-total">0 ₽</span>
+          </div>
+          <button id="checkout-btn" class="checkout-btn">
+            Оформить заказ
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="no-results" class="catalog__no-results hidden">
+        Корзина пуста. <a href="catalog.html" style="color:var(--accent)">Перейти в каталог →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2023 Digital Agency. All Rights Reserved</p>
+        <div class="footer__legal">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="./assets/js/cart.js"></script>
+</body>
+</html>
